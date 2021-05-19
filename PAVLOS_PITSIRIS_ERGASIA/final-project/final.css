@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+
+    height: 100% ;
+}
+
+/* to 100% tou PAREND CONTEINER OXI TIS OTHONIS */
+.header{
+    width: 100%;
+    margin: 0 auto;
+    /* overflow: hidden ; */
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    width: 30%;
+    /* float: left; */
+}
+
+.logo > img{
+    width: 100%;
+    height: auto;
+}
+
+.menu{
+    width: 55%;
+    position: relative;
+    
+    /* float: right; */
+
+}
+
+/* stixisi orizontia, rithmisi kenon aris deksia kai endiamesa, stix katheta */
+.menu > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; epidi diorthosa pano */
+}
+
+/* Figoun koukides */
+.menu li{
+    list-style: none;
+    line-height:  40px;
+}
+
+/* figi ipigramisi link */
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Figoun nea <ul> pou evala */
+.menu > ul ul{
+    display: none;
+}
+
+
+
+/* Na efanizonte ne <ul> otan iparxi hover event */
+.menu > ul > li:hover > ul {
+    display: block;
+    background-color: whitesmoke;
+    width: 100px;
+    position: absolute;
+    top: 40px;
+}
+
+.menu > ul > li > ul> li> a:hover {
+    color: #8c3235;
+}
+
+.toggle-button{
+    width: 55%;
+    display: none;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.toggle-button > button{
+    width: 60px;
+    height: 60px;
+    border-color: #8c3235;
+    border-radius: 50%;
+    color: #8c3235;
+}
+
+.toggle-button > button:hover {
+    box-shadow: 0 0 15px gray;
+}
+
+.toggle-menu{
+    display: none;
+    padding-top: 160px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.toggle-menu li > a {
+    text-decoration: none;
+}
+
+.toggle-menu > ul > li > a {
+    font-size: 26px;
+    color: black;
+}
+
+.toggle-menu > ul > li > ul >li>a{
+    color: black;
+}
+
+.toggle-menu > ul > li > ul >li>a:hover{
+    font-size: 20px;
+    color: #8c3235;
+}
+
+.toggle-menu > ul > li{
+    padding-top: 20px;
+}
+
+.slider{
+    display: block;
+    width: 100%;
+    background-image: url("../img/pavlo_slider2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.title{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 60px;
+    
+}
+
+.title > p {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    color: white;
+    background: rgba(44, 44, 44, 0.5)
+}
+
+
+.subtitle{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+}
+
+.subtitle > p {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: rgb(234, 237,237);
+    background: rgba(44, 44, 44, 0.5)
+}
+
+.slogan{
+    padding: 120px 0;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 25px;
+    
+    overflow: hidden;
+    
+}
+
+.main-title{
+    width: 40%;
+    
+    padding-bottom: 25px;
+    
+
+}
+
+.main-title > h1 {
+    font-family: 'Roboto Slab', serif;
+    background-color: #08F9F7;
+}
+
+.main-text{
+    width: 50%;
+    float: left;
+    
+    
+    
+}
+
+.main-text > p{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.footer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    overflow: hidden;
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+}
+
+.copyright{
+    width: 85%;
+    float: left;
+}
+
+.copyright > p{
+    font-family: 'Quicksand', serif;
+    font-size: 0.8rem;
+    color: white;
+    align-items: center;
+}
+
+.social{
+    width: 25%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.social > p{
+    margin-right: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.fab{
+    font-size: 30px;
+    color: #8c3235;
+    margin-right: 5px;
+    transition: transform .2s;
+}
+
+.fab:hover {
+    color: #501619;
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+
+
+
+
+/* Accordion */
+.second{
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 20px;
+    background-color: cadetblue;
+}
+
+.acc-eff {
+    width: 80%;
+    margin: 0 auto;
+    background-color: cornsilk;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc-eff2 {
+    width: 40%;
+    
+    padding: 20px;
+    
+    align-items: center;
+}
+
+.acc-eff3 {
+    width: 40%;
+    
+    
+    padding: 20px;
+    
+    align-items: center;
+}
+
+.acc-eff3 > h2{
+    margin-bottom: 10px;
+}
+
+.acc-eff2 > h2{
+    margin-bottom: 10px;
+}
+
+.acc-eff > h2{
+    margin-bottom: 15px;
+}
+
+.accordion{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    background-color: #8c3235;
+    border: 1px solid black;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.fas{
+    padding-right: 10px;
+}
+
+.inner-text{
+    display: none;
+    padding: 10px 10px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.active, .accordion:hover {
+    background-color: #501619;
+}
+
+.bc-b{
+    background-color: #08F9F7;
+    width: 20%;
+    margin-bottom: 8px;
+}
+
+
+
+
+/* LANGSSSSSSSS */
+.langs-title{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    padding-top: 40px;
+}
+
+.langs-title > h1 {
+    font-family: 'Roboto Slab', serif;
+    background-color: #08F9F7;
+
+}
+
+.langs{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.langs2{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.langs3{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.limg {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+    
+}
+
+.limg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+#Tiffany-Restaurant {
+    background-image: url('../img/tiffany-rest.jpg');
+}
+
+#Periyialli-Restaurant {
+    background-image: url('../img/periyialli.jpg');
+}
+
+#Erato-Bar {
+    background-image: url('../img/erato.jpg');
+}
+
+#Gym{
+    background-image: url('../img/gym.jpg');
+}
+
+#Conference-room {
+    background-image: url('../img/conference.jpg');
+}
+
+#Outdoor-Pool {
+    background-image: url('../img/poolarea.jpg');
+}
+
+#Indoor-Pool {
+    background-image: url('../img/indoor_pool.jpg');
+}
+
+#Tennis-Court {
+    background-image: url('../img/tennis-court.jpg');
+}
+
+#Diving-Center {
+    background-image: url('../img/divers.jpg');
+}
+
+#Play-Ground {
+    background-image: url('../img/playground.jpg');
+}
+
+#Spa-Center {
+    background-image: url('../img/spa.jpg');
+}
+
+.tiffany-text, .periyially-text, .erato-text, .gym-text, .conference-text, .pool-text, .inpool-text, .tennis-text, .Dive-text, .Play-text, .Spa-text{
+    border: 2px solid #501619;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: justify;
+    display: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+
+
+.prosopsi{
+    float: right;
+    
+    
+}
+
+.prosopsi > img{
+    width: 95%;
+    height: auto;
+    
+}
+
+
+@media (max-width: 1330px) {
+    .prosopsi{ 
+        float: none;
+    }
+
+    .prosopsi > img{
+        margin-top: 20px;
+        width: 55%;
+        height: auto;
+        }
+        
+    .limg {
+        width: 240px;
+        height: 240px;
+    }
+
+    
+
+
+    }
+
+        
+@media (max-width: 992px) {
+    .toggle-button{
+        display: flex;
+        text-align: left;
+    }
+
+    .menu{
+        display: none;
+        
+    }
+
+
+
+    .main-title{
+        width: 60%;
+    }
+
+    .main-text{
+        width: 70%;
+  
+    }
+
+    .prosopsi > img{
+        width: 80%;
+        height: auto;  
+    }
+
+    .fab{
+        font-size: 25px;
+    }
+
+    .limg {
+        width: 190px;
+        height: 190px;
+    }
+
+    .acc-eff2>ul>li, .acc-eff3>ul>li,.inner-text{
+        font-size: 14px;
+    }
+
+    .bc-b{
+        width: 30%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .logo > img{
+        width: auto;
+        height: 75px;
+    }
+
+    .title > p {
+        font-size: 30px;
+    }
+
+    .subtitle > p {
+        font-size: 22px;
+    }
+
+
+        
+    .main-title{
+        width: 70%;
+    }
+    
+    .main-text{
+        width: 80%;
+      
+    }
+    
+    .prosopsi > img{
+        width: 90%;
+        height: auto;  
+    }
+
+    .limg {
+        width: 145px;
+        height: 145px;
+    }
+
+    .footer p{
+        font-size: 0.75rem;
+    }
+
+    .acc-eff {
+        width: 100%;
+    }
+
+    
+
+    .acc-eff2>ul>li, .acc-eff3>ul>li, .inner-text{
+        font-size: 12px;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .social > p {
+        margin-right: 5px;
+    }
+
+    .copyright{
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .bc-b{
+        width: 35%;
+    }
+
+    
+}
+
+@media (max-width: 576px) {
+    .logo > img {
+        width: auto;
+        height: 60px;
+    }
+
+    .title > p {
+        font-size: 24px;
+    }
+
+    .subtitle > p {
+        font-size: 18px;
+    }
+
+    .toggle-button > button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .main-title > h1{
+        font-size: 24px;
+    }
+
+    .main-text > p{
+        font-size: 14px;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .social-icons {
+        display: flex;
+    }
+
+    .copyright{
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .social > p {
+        margin-right: 5px;
+    }
+
+    .footer p{
+        font-size: 0.65rem;
+    }
+
+    .main-title{
+        width: 80%;
+    }
+    
+    .main-text{
+        width: 90%;
+      
+    }
+    
+    .prosopsi > img{
+        width: 100%;
+        height: auto;  
+    }
+
+    .limg {
+        width: 115px;
+        height: 115px;
+    }
+
+    .acc-eff2>ul>li, .acc-eff3>ul>li, .inner-text{
+        font-size: 11px;
+    }
+
+    .bc-b{
+        width: 50%;
+    }
+
+    
+
+}
+
+@media (max-width:420px){
+    .logo > img {
+        width: auto;
+        height: 50px;
+    }
+    
+    .toggle-button > button {
+        width: 37px;
+        height: 37px;
+    }
+
+    .title > p {
+        font-size: 20px;
+    }
+
+    .subtitle > p {
+        font-size: 14px;
+    }
+
+    .main-title > h1{
+        font-size: 18px;
+    }
+
+    .main-text > p{
+        font-size: 12px;
+    }
+
+    .copyright > p {
+        font-size: 10px;
+    }
+
+    .social > p {
+        font-size: 12px;
+    }
+
+    .limg {
+        width: 105px;
+        height: 105px;
+    }
+}
