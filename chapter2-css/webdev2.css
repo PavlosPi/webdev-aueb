@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* THA KANO PIO APLI/OREA TI SELIDA EDO */
+
+/* body{
+    background-color: white;
+} */
+
+/* body{
+    background-image: url('../img/adam.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+} */
+
+.webdev-img{
+    width: 100%;
+    height: auto;
+}
+
+.webdev-header{
+    font-family: 'Roboto slab', serif;
+    color: #762124;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.webdev-text{
+    
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: black /* or rgp(255,255,255, kai edo mporo na doso appasity) */;
+
+}
+
+.fa-facebook-square, .fa-twitter-square{
+    color: blue;
+    font-size: 100px;
+}
+
+.apply>a:hover{
+    color:red
+}
+
+.apply>a:active{
+    color:green
+}
+
+table, th, td {
+    border: 1px solid black
+}
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+}
+
+th{
+    color: blue;
+}

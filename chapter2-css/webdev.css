@@ -1,0 +1,29 @@
+body{
+    background-color: #131314;
+}
+
+.webdev-header{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 1px; */
+    border: 1px solid blue;
+    font-style: italic;
+    text-decoration: underline;
+
+    
+}
+
+.webdev-text{
+/*     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem; */
+    text-indent: 25px;
+    text-align: justify;
+    color: white /* or rgp(255,255,255, kai edo mporo na doso appasity) */;
+    font: 17px/22px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

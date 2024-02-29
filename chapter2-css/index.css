@@ -1,0 +1,42 @@
+/* ETSI THA KANI OLA TA H1 AFTI TI MORFI
+h1{
+    color: red;
+    background-color: black;
+} */
+
+/* VAZO KLASI MESA STO H1 KAI TA SINDEO EDO ME TELIA */
+/* Mporo na to kano kai me id mesa sto h1 apla to kano me #aueb-header */
+/* Xrisimopoio id anti class gia monadikotita (sinidthos se java script) */
+/* Eno sto class mporo na exo to idio se 2 h1 */
+/* .aueb-header{
+    color: blue;
+    background-color: black;
+}
+
+.webdev-header{
+    color: red;
+    background-color: black;
+}
+
+.webdev-text{
+    color: white;
+    background-color: black;
+
+} */
+
+/* THA MPOROUSE NA EXO MEGALITERI EVELIKSIA DINONTAS SINTOMA ONOMATA */
+.bg-black{
+    background-color: black;
+}
+
+.fg-red{
+    color: red;
+}
+
+.fg-white{
+color:white;
+}
+
+.fg-blue{
+    color: blue;
+}
